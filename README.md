@@ -23,3 +23,15 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+## Working online prototype link
+
+https://ravend-biacala.github.io/#/
+
+## Video Presentation report link 
+
+https://youtu.be/uYDVsjaF_kk
+
+
+

@@ -16,15 +16,15 @@
             <!-- Left aligned nav items -->
             <b-navbar-nav class="nav-right-items">
               <b-navbar-brand href="#" @click="projectClicked" alt="Projects" style="font-size: 18px;">Projects</b-navbar-brand>
-              <b-navbar-brand href="#" style="font-size: 18px;">Bookmarks</b-navbar-brand>
-              <b-navbar-brand href="#" style="font-size: 18px;">Likes</b-navbar-brand>
+              <b-navbar-brand href="#" style="font-size: 18px;" alt="Bookmarks">Bookmarks</b-navbar-brand>
+              <b-navbar-brand href="#" style="font-size: 18px;" alt="Likes">Likes</b-navbar-brand>
             </b-navbar-nav>
           </b-navbar-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#"><i class="fas fa-comment-alt" style="padding-top: 5px; font-size:20px"></i></b-nav-item>
-            <b-nav-item href="#"><i class="fas fa-users" style="padding-top: 5px; font-size:20px"></i></b-nav-item>
-            <b-nav-item href="#" style="padding-top: 3px;">Sign out</b-nav-item>
+            <b-nav-item href="#"><i class="fas fa-comment-alt" style="padding-top: 5px; font-size:20px" alt="Comments"></i></b-nav-item>
+            <b-nav-item href="#"><i class="fas fa-users" style="padding-top: 5px; font-size:20px" alt="Connections"></i></b-nav-item>
+            <b-nav-item href="#" style="padding-top: 3px;" alt="sign-out">Sign out</b-nav-item>
           </b-navbar-nav>      
       </b-navbar>
     </div>
@@ -209,10 +209,10 @@
         </transition>
 
     <div class="actions">
-      <button class="button" type="button" @click="actionClicked"><i class="fas fa-sync-alt" style="color: #02d2f2;"></i></button>
-      <button class="button" type="button" @click="actionClicked"><i class="fas fa-times-circle" style="color: red; padding-left: 5px;"></i></button>
-      <button class="button" type="button" @click="actionClicked"><i class="fas fa-heart" style="color: #00eab5; padding-left: 5px;"></i></button>
-      <button id="tooltip-button-1" class="button" type="button" @click="expandClicked"><i class="fas fa-search-plus" style="color: #f5f507; padding-left: 5px;"></i></button>
+      <button class="button" type="button" aria-label="Refresh for new results" @click="actionClicked"><i class="fas fa-sync-alt" style="color: #02d2f2;"></i></button>
+      <button class="button" type="button" aria-label="Like the project" @click="actionClicked"><i class="fas fa-times-circle" style="color: red; padding-left: 5px;"></i></button>
+      <button class="button" type="button" aria-label="Dislike the project" @click="actionClicked"><i class="fas fa-heart" style="color: #00eab5; padding-left: 5px;"></i></button>
+      <button id="tooltip-button-1" class="button" type="button" aria-label="More in-depth view" @click="expandClicked"><i class="fas fa-search-plus" style="color: #f5f507; padding-left: 5px;"></i></button>
     </div>
     <b-tooltip target="tooltip-button-1" placement="right">
       Click me for a more <b>in-depth</b> view!

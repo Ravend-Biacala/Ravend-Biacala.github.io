@@ -30,7 +30,7 @@
       </div>
       <!-- Top Title Nav -->
       <div class="title-nav">
-        <button class="button" style="position:relative; top: 28px; left: 30px;" @click="backClicked">
+        <button class="button" style="position:relative; top: 28px; left: 30px;" aria-label="go back" @click="backClicked">
           <i class="fas fa-arrow-left" style="font-size: 45px; color:#1db4cc;"></i>
         </button>
         <h2 style="padding-left: 150px; top: 20px;"><b>Tic-Tac-Toe</b></h2>
